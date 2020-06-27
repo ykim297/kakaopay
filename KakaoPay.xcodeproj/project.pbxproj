@@ -3,19 +3,82 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1970000024A628E100D11916 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 1970FFFF24A628E100D11916 /* Nuke */; };
+		1970000324A62A7600D11916 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 1970000224A62A7600D11916 /* Logging */; };
+		1970000C24A62CC300D11916 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970000624A62CC300D11916 /* HomePresenter.swift */; };
+		1970000D24A62CC300D11916 /* HomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970000724A62CC300D11916 /* HomeWorker.swift */; };
+		1970000E24A62CC300D11916 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970000824A62CC300D11916 /* HomeRouter.swift */; };
+		1970000F24A62CC300D11916 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970000924A62CC300D11916 /* HomeModels.swift */; };
+		1970001024A62CC300D11916 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970000A24A62CC300D11916 /* HomeViewController.swift */; };
+		1970001124A62CC300D11916 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970000B24A62CC300D11916 /* HomeInteractor.swift */; };
+		1970001424A63EC900D11916 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970001324A63EC900D11916 /* PhotoModel.swift */; };
+		1970001624A643FC00D11916 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970001524A643FC00D11916 /* UserModel.swift */; };
+		1970001824A6449B00D11916 /* ProfileImageListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970001724A6449B00D11916 /* ProfileImageListModel.swift */; };
+		1970001A24A644A500D11916 /* LinkListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970001924A644A500D11916 /* LinkListModel.swift */; };
+		1970001C24A6456400D11916 /* CurrentUserCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970001B24A6456400D11916 /* CurrentUserCollectionModel.swift */; };
+		1970001E24A6467200D11916 /* UrlListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970001D24A6467200D11916 /* UrlListModel.swift */; };
+		1970002024A64CC400D11916 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970001F24A64CC400D11916 /* ErrorModel.swift */; };
+		1970002324A6576000D11916 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970002224A6576000D11916 /* ImageTableViewCell.swift */; };
+		1970002624A6596700D11916 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1970002524A6596700D11916 /* RxRelay */; };
+		1970002824A6596700D11916 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1970002724A6596700D11916 /* RxSwift */; };
+		1970002A24A6596700D11916 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1970002924A6596700D11916 /* RxCocoa */; };
+		1970002C24A6935C00D11916 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970002B24A6935C00D11916 /* SearchView.swift */; };
+		1970003424A6A05900D11916 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970002E24A6A05800D11916 /* SearchPresenter.swift */; };
+		1970003524A6A05900D11916 /* SearchWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970002F24A6A05800D11916 /* SearchWorker.swift */; };
+		1970003624A6A05900D11916 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970003024A6A05800D11916 /* SearchRouter.swift */; };
+		1970003724A6A05900D11916 /* SearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970003124A6A05800D11916 /* SearchModels.swift */; };
+		1970003824A6A05900D11916 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970003224A6A05800D11916 /* SearchViewController.swift */; };
+		1970003924A6A05900D11916 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970003324A6A05800D11916 /* SearchInteractor.swift */; };
+		1970003B24A6E25900D11916 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970003A24A6E25800D11916 /* String+.swift */; };
+		1970003D24A6E2CE00D11916 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970003C24A6E2CE00D11916 /* UIViewController+.swift */; };
 		1970FF9424A5B56900D11916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970FF9324A5B56900D11916 /* AppDelegate.swift */; };
 		1970FF9624A5B56900D11916 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970FF9524A5B56900D11916 /* SceneDelegate.swift */; };
 		1970FF9824A5B56900D11916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970FF9724A5B56900D11916 /* ViewController.swift */; };
 		1970FF9B24A5B56900D11916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1970FF9924A5B56900D11916 /* Main.storyboard */; };
 		1970FF9D24A5B56A00D11916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1970FF9C24A5B56A00D11916 /* Assets.xcassets */; };
 		1970FFA024A5B56A00D11916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1970FF9E24A5B56A00D11916 /* LaunchScreen.storyboard */; };
+		1970FFD724A6265F00D11916 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970FFAE24A6265F00D11916 /* UIView+.swift */; };
+		1970FFDA24A6265F00D11916 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970FFB124A6265F00D11916 /* UITableView+.swift */; };
+		1970FFDC24A6265F00D11916 /* UIScreen+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970FFB324A6265F00D11916 /* UIScreen+.swift */; };
+		1970FFDD24A6265F00D11916 /* ModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970FFB524A6265F00D11916 /* ModelParser.swift */; };
+		1970FFDE24A6265F00D11916 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970FFB724A6265F00D11916 /* Log.swift */; };
+		1970FFDF24A6265F00D11916 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970FFB924A6265F00D11916 /* BaseViewController.swift */; };
+		1970FFE024A6265F00D11916 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970FFBA24A6265F00D11916 /* RootViewController.swift */; };
+		1970FFF124A6265F00D11916 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1970FFD324A6265F00D11916 /* NetworkManager.swift */; };
+		1970FFF424A626D200D11916 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1970FFF324A626D200D11916 /* Alamofire */; };
+		1970FFFA24A6286C00D11916 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1970FFF924A6286C00D11916 /* SnapKit */; };
+		1970FFFD24A6289F00D11916 /* LoggingOSLog in Frameworks */ = {isa = PBXBuildFile; productRef = 1970FFFC24A6289F00D11916 /* LoggingOSLog */; };
+		8624B6A7250051532EE6795A /* Pods_KakaoPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C343EAD65F32AAED3B03BEBA /* Pods_KakaoPay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1970000624A62CC300D11916 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		1970000724A62CC300D11916 /* HomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorker.swift; sourceTree = "<group>"; };
+		1970000824A62CC300D11916 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		1970000924A62CC300D11916 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		1970000A24A62CC300D11916 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1970000B24A62CC300D11916 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		1970001324A63EC900D11916 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		1970001524A643FC00D11916 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1970001724A6449B00D11916 /* ProfileImageListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageListModel.swift; sourceTree = "<group>"; };
+		1970001924A644A500D11916 /* LinkListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListModel.swift; sourceTree = "<group>"; };
+		1970001B24A6456400D11916 /* CurrentUserCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserCollectionModel.swift; sourceTree = "<group>"; };
+		1970001D24A6467200D11916 /* UrlListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlListModel.swift; sourceTree = "<group>"; };
+		1970001F24A64CC400D11916 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		1970002224A6576000D11916 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		1970002B24A6935C00D11916 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		1970002E24A6A05800D11916 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		1970002F24A6A05800D11916 /* SearchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWorker.swift; sourceTree = "<group>"; };
+		1970003024A6A05800D11916 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		1970003124A6A05800D11916 /* SearchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModels.swift; sourceTree = "<group>"; };
+		1970003224A6A05800D11916 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		1970003324A6A05800D11916 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		1970003A24A6E25800D11916 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		1970003C24A6E2CE00D11916 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		1970FF9024A5B56900D11916 /* KakaoPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1970FF9324A5B56900D11916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1970FF9524A5B56900D11916 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +87,17 @@
 		1970FF9C24A5B56A00D11916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1970FF9F24A5B56A00D11916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1970FFA124A5B56A00D11916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1970FFAE24A6265F00D11916 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		1970FFB124A6265F00D11916 /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		1970FFB324A6265F00D11916 /* UIScreen+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+.swift"; sourceTree = "<group>"; };
+		1970FFB524A6265F00D11916 /* ModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelParser.swift; sourceTree = "<group>"; };
+		1970FFB724A6265F00D11916 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		1970FFB924A6265F00D11916 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1970FFBA24A6265F00D11916 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		1970FFD324A6265F00D11916 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7503016F7EB6A993EED41BB5 /* Pods-KakaoPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoPay.release.xcconfig"; path = "Target Support Files/Pods-KakaoPay/Pods-KakaoPay.release.xcconfig"; sourceTree = "<group>"; };
+		B3EF7ACC35DB3EFBB8FDD187 /* Pods-KakaoPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoPay.debug.xcconfig"; path = "Target Support Files/Pods-KakaoPay/Pods-KakaoPay.debug.xcconfig"; sourceTree = "<group>"; };
+		C343EAD65F32AAED3B03BEBA /* Pods_KakaoPay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoPay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +105,77 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1970002624A6596700D11916 /* RxRelay in Frameworks */,
+				1970000324A62A7600D11916 /* Logging in Frameworks */,
+				1970FFFA24A6286C00D11916 /* SnapKit in Frameworks */,
+				1970FFF424A626D200D11916 /* Alamofire in Frameworks */,
+				1970FFFD24A6289F00D11916 /* LoggingOSLog in Frameworks */,
+				1970000024A628E100D11916 /* Nuke in Frameworks */,
+				1970002A24A6596700D11916 /* RxCocoa in Frameworks */,
+				1970002824A6596700D11916 /* RxSwift in Frameworks */,
+				8624B6A7250051532EE6795A /* Pods_KakaoPay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1970000424A62C8100D11916 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1970000524A62CA900D11916 /* Home */,
+				1970002D24A696A800D11916 /* Search */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		1970000524A62CA900D11916 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1970000624A62CC300D11916 /* HomePresenter.swift */,
+				1970000724A62CC300D11916 /* HomeWorker.swift */,
+				1970000824A62CC300D11916 /* HomeRouter.swift */,
+				1970000924A62CC300D11916 /* HomeModels.swift */,
+				1970000A24A62CC300D11916 /* HomeViewController.swift */,
+				1970000B24A62CC300D11916 /* HomeInteractor.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1970001224A63D6E00D11916 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1970001324A63EC900D11916 /* PhotoModel.swift */,
+				1970001524A643FC00D11916 /* UserModel.swift */,
+				1970001724A6449B00D11916 /* ProfileImageListModel.swift */,
+				1970001924A644A500D11916 /* LinkListModel.swift */,
+				1970001B24A6456400D11916 /* CurrentUserCollectionModel.swift */,
+				1970001D24A6467200D11916 /* UrlListModel.swift */,
+				1970001F24A64CC400D11916 /* ErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1970002D24A696A800D11916 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				1970002E24A6A05800D11916 /* SearchPresenter.swift */,
+				1970002F24A6A05800D11916 /* SearchWorker.swift */,
+				1970003024A6A05800D11916 /* SearchRouter.swift */,
+				1970003124A6A05800D11916 /* SearchModels.swift */,
+				1970003224A6A05800D11916 /* SearchViewController.swift */,
+				1970003324A6A05800D11916 /* SearchInteractor.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		1970FF8724A5B56900D11916 = {
 			isa = PBXGroup;
 			children = (
 				1970FF9224A5B56900D11916 /* KakaoPay */,
 				1970FF9124A5B56900D11916 /* Products */,
+				CD743B48BC58084D386294BE /* Pods */,
+				4EE73736E8C120B3F61E95F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +190,11 @@
 		1970FF9224A5B56900D11916 /* KakaoPay */ = {
 			isa = PBXGroup;
 			children = (
+				1970000424A62C8100D11916 /* Scenes */,
+				1970001224A63D6E00D11916 /* Model */,
+				1970FFBB24A6265F00D11916 /* Common */,
+				1970FFD224A6265F00D11916 /* Manager */,
+				1970FFA824A6265F00D11916 /* Utilities */,
 				1970FF9324A5B56900D11916 /* AppDelegate.swift */,
 				1970FF9524A5B56900D11916 /* SceneDelegate.swift */,
 				1970FF9724A5B56900D11916 /* ViewController.swift */,
@@ -67,6 +206,104 @@
 			path = KakaoPay;
 			sourceTree = "<group>";
 		};
+		1970FFA824A6265F00D11916 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1970FFAB24A6265F00D11916 /* Extension */,
+				1970FFB424A6265F00D11916 /* Parser */,
+				1970FFB624A6265F00D11916 /* Log */,
+				1970FFB824A6265F00D11916 /* ViewController */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1970FFAB24A6265F00D11916 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1970003A24A6E25800D11916 /* String+.swift */,
+				1970FFAE24A6265F00D11916 /* UIView+.swift */,
+				1970FFB124A6265F00D11916 /* UITableView+.swift */,
+				1970FFB324A6265F00D11916 /* UIScreen+.swift */,
+				1970003C24A6E2CE00D11916 /* UIViewController+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1970FFB424A6265F00D11916 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				1970FFB524A6265F00D11916 /* ModelParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		1970FFB624A6265F00D11916 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				1970FFB724A6265F00D11916 /* Log.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		1970FFB824A6265F00D11916 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1970FFB924A6265F00D11916 /* BaseViewController.swift */,
+				1970FFBA24A6265F00D11916 /* RootViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1970FFBB24A6265F00D11916 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1970FFC224A6265F00D11916 /* View */,
+				1970FFC824A6265F00D11916 /* TableViewCell */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1970FFC224A6265F00D11916 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1970002B24A6935C00D11916 /* SearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1970FFC824A6265F00D11916 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1970002224A6576000D11916 /* ImageTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		1970FFD224A6265F00D11916 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1970FFD324A6265F00D11916 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4EE73736E8C120B3F61E95F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C343EAD65F32AAED3B03BEBA /* Pods_KakaoPay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD743B48BC58084D386294BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3EF7ACC35DB3EFBB8FDD187 /* Pods-KakaoPay.debug.xcconfig */,
+				7503016F7EB6A993EED41BB5 /* Pods-KakaoPay.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +311,27 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1970FFA424A5B56A00D11916 /* Build configuration list for PBXNativeTarget "KakaoPay" */;
 			buildPhases = (
+				6DB7CCC4E02DB889B8CBA32B /* [CP] Check Pods Manifest.lock */,
 				1970FF8C24A5B56900D11916 /* Sources */,
 				1970FF8D24A5B56900D11916 /* Frameworks */,
 				1970FF8E24A5B56900D11916 /* Resources */,
+				37E151F0E5C210C255524B7F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = KakaoPay;
+			packageProductDependencies = (
+				1970FFF324A626D200D11916 /* Alamofire */,
+				1970FFF924A6286C00D11916 /* SnapKit */,
+				1970FFFC24A6289F00D11916 /* LoggingOSLog */,
+				1970FFFF24A628E100D11916 /* Nuke */,
+				1970000224A62A7600D11916 /* Logging */,
+				1970002524A6596700D11916 /* RxRelay */,
+				1970002724A6596700D11916 /* RxSwift */,
+				1970002924A6596700D11916 /* RxCocoa */,
+			);
 			productName = KakaoPay;
 			productReference = 1970FF9024A5B56900D11916 /* KakaoPay.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +360,14 @@
 				Base,
 			);
 			mainGroup = 1970FF8724A5B56900D11916;
+			packageReferences = (
+				1970FFF224A626D200D11916 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1970FFF824A6286C00D11916 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1970FFFB24A6289F00D11916 /* XCRemoteSwiftPackageReference "swift-log-oslog" */,
+				1970FFFE24A628E100D11916 /* XCRemoteSwiftPackageReference "Nuke" */,
+				1970000124A62A7600D11916 /* XCRemoteSwiftPackageReference "swift-log" */,
+				1970002424A6596700D11916 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 1970FF9124A5B56900D11916 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,14 +390,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37E151F0E5C210C255524B7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoPay/Pods-KakaoPay-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoPay/Pods-KakaoPay-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoPay/Pods-KakaoPay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DB7CCC4E02DB889B8CBA32B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoPay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1970FF8C24A5B56900D11916 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1970002024A64CC400D11916 /* ErrorModel.swift in Sources */,
+				1970FFDD24A6265F00D11916 /* ModelParser.swift in Sources */,
+				1970001624A643FC00D11916 /* UserModel.swift in Sources */,
+				1970003924A6A05900D11916 /* SearchInteractor.swift in Sources */,
+				1970001A24A644A500D11916 /* LinkListModel.swift in Sources */,
+				1970002324A6576000D11916 /* ImageTableViewCell.swift in Sources */,
+				1970001E24A6467200D11916 /* UrlListModel.swift in Sources */,
+				1970003D24A6E2CE00D11916 /* UIViewController+.swift in Sources */,
 				1970FF9824A5B56900D11916 /* ViewController.swift in Sources */,
+				1970001124A62CC300D11916 /* HomeInteractor.swift in Sources */,
+				1970003624A6A05900D11916 /* SearchRouter.swift in Sources */,
+				1970FFDA24A6265F00D11916 /* UITableView+.swift in Sources */,
+				1970FFDF24A6265F00D11916 /* BaseViewController.swift in Sources */,
+				1970FFE024A6265F00D11916 /* RootViewController.swift in Sources */,
+				1970003B24A6E25900D11916 /* String+.swift in Sources */,
+				1970001024A62CC300D11916 /* HomeViewController.swift in Sources */,
+				1970FFF124A6265F00D11916 /* NetworkManager.swift in Sources */,
+				1970FFD724A6265F00D11916 /* UIView+.swift in Sources */,
+				1970000E24A62CC300D11916 /* HomeRouter.swift in Sources */,
+				1970FFDE24A6265F00D11916 /* Log.swift in Sources */,
+				1970000D24A62CC300D11916 /* HomeWorker.swift in Sources */,
+				1970001C24A6456400D11916 /* CurrentUserCollectionModel.swift in Sources */,
+				1970001424A63EC900D11916 /* PhotoModel.swift in Sources */,
+				1970FFDC24A6265F00D11916 /* UIScreen+.swift in Sources */,
+				1970003524A6A05900D11916 /* SearchWorker.swift in Sources */,
+				1970003824A6A05900D11916 /* SearchViewController.swift in Sources */,
 				1970FF9424A5B56900D11916 /* AppDelegate.swift in Sources */,
+				1970002C24A6935C00D11916 /* SearchView.swift in Sources */,
+				1970000F24A62CC300D11916 /* HomeModels.swift in Sources */,
 				1970FF9624A5B56900D11916 /* SceneDelegate.swift in Sources */,
+				1970000C24A62CC300D11916 /* HomePresenter.swift in Sources */,
+				1970003424A6A05900D11916 /* SearchPresenter.swift in Sources */,
+				1970001824A6449B00D11916 /* ProfileImageListModel.swift in Sources */,
+				1970003724A6A05900D11916 /* SearchModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +600,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +612,7 @@
 		};
 		1970FFA524A5B56A00D11916 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3EF7ACC35DB3EFBB8FDD187 /* Pods-KakaoPay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +630,7 @@
 		};
 		1970FFA624A5B56A00D11916 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7503016F7EB6A993EED41BB5 /* Pods-KakaoPay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +668,100 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1970000124A62A7600D11916 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		1970002424A6596700D11916 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		1970FFF224A626D200D11916 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.9.1;
+			};
+		};
+		1970FFF824A6286C00D11916 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		1970FFFB24A6289F00D11916 /* XCRemoteSwiftPackageReference "swift-log-oslog" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chrisaljoudi/swift-log-oslog.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+		1970FFFE24A628E100D11916 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = exactVersion;
+				version = 8.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1970000224A62A7600D11916 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1970000124A62A7600D11916 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+		1970002524A6596700D11916 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1970002424A6596700D11916 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		1970002724A6596700D11916 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1970002424A6596700D11916 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		1970002924A6596700D11916 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1970002424A6596700D11916 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		1970FFF324A626D200D11916 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1970FFF224A626D200D11916 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1970FFF924A6286C00D11916 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1970FFF824A6286C00D11916 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		1970FFFC24A6289F00D11916 /* LoggingOSLog */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1970FFFB24A6289F00D11916 /* XCRemoteSwiftPackageReference "swift-log-oslog" */;
+			productName = LoggingOSLog;
+		};
+		1970FFFF24A628E100D11916 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1970FFFE24A628E100D11916 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1970FF8824A5B56900D11916 /* Project object */;
 }
