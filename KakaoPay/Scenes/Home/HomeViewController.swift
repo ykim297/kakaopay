@@ -31,7 +31,7 @@ class HomeViewController: BaseViewController, HomeDisplayLogic {
     lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.separatorStyle = .none
-        tableView.backgroundColor = UIColor.white
+        tableView.backgroundColor = UIColor.clear
         tableView.keyboardDismissMode = .onDrag
         tableView.estimatedRowHeight = 200.0
         tableView.rowHeight = UITableView.automaticDimension
@@ -47,6 +47,8 @@ class HomeViewController: BaseViewController, HomeDisplayLogic {
     var isConnecting: Bool = false
     var imageSlideVC: BFRImageViewController?
     let searchBar: SearchView = SearchView(type: .home)
+    let tableViewHeader: UIView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.width, height: 300.0))
+    let backGroundImageView: UIImageView = UIImageView()
     
     // MARK: Object lifecycle
     
@@ -124,6 +126,14 @@ class HomeViewController: BaseViewController, HomeDisplayLogic {
             urls.append(url.urls.regular)
         }
 
+        if let imageUrl = URL(string: urls.last ?? "") {
+            self.backGroundImageView.contentMode = .scaleAspectFill
+            Nuke.loadImage(with: imageUrl, into: self.backGroundImageView) { _ in
+//                self.view.setNeedsLayout()
+//                self.layoutIfNeeded()
+            }
+        }
+        
         if itemList == nil {
             itemList = Home.Search.ViewModel(lists: model.results, urls:urls, pageCount: 1)
             
@@ -164,30 +174,35 @@ class HomeViewController: BaseViewController, HomeDisplayLogic {
 
 extension HomeViewController {
     private func setComponents() {
-        
         //todo: like unsplash app, put animation on searchBar and tableViewHeader
-//        let view: UIView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.width, height: 300.0))
-//        view.backgroundColor = .red
-//        self.tableView.tableHeaderView = view
-        
+        tableViewHeader.backgroundColor = .clear
+        self.tableView.tableHeaderView = tableViewHeader
         self.tableView.rx.setDelegate(self).disposed(by: disposeBag)
-        self.view.addSubview(self.searchBar)
+
         self.searchBar.searchBar.resignFirstResponder()
+        self.view.addSubview(self.backGroundImageView)
         self.view.addSubview(self.tableView)
+        self.view.addSubview(self.searchBar)
         self.setAutolayOut()
     }
     
     private func setAutolayOut() {
-        self.searchBar.snp.makeConstraints { view -> Void in
+        self.backGroundImageView.snp.makeConstraints { view -> Void in
             view.left.right.equalTo(self.view)
             view.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+            view.height.equalTo(300.0)
+        }
+
+        self.searchBar.snp.makeConstraints { view -> Void in
+            view.left.right.equalTo(self.view)
+            view.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(120.0)
             view.height.equalTo(60.0)
-            view.bottom.equalTo(self.tableView.snp.top)
         }
         
         self.tableView.snp.makeConstraints { view -> Void in
             view.left.right.equalTo(self.view)
             view.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom)
+            view.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
         }
     }
 }
@@ -282,4 +297,17 @@ extension HomeViewController: UITableViewDelegate {
     }
 }
 
+extension HomeViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (scrollView.contentOffset.y >= 120) {
+            self.searchBar.snp.updateConstraints { view -> Void in
+                view.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+            }
+        } else {
+            self.searchBar.snp.updateConstraints { view -> Void in
+                view.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(120.0 - scrollView.contentOffset.y)
+            }
+        }
+    }
+}
 

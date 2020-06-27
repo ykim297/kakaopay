@@ -16,13 +16,6 @@ enum SearchType: Int {
 class SearchView: UIView {
     let height: CGFloat = 45.0
     let searchBar: UISearchBar = UISearchBar()
-//    var closeButton: UIButton = {
-//        let button = UIButton(type: .custom)
-//        button.setTitle("cancel", for: <#T##UIControl.State#>)
-//        button.withSize(.init(width: 18, height: 18))
-//        button.addTarget(self, action: #selector(didTap), for: .touchUpInside)
-//        return button
-//    }()
 
     var type: SearchType = .home
     
@@ -33,9 +26,12 @@ class SearchView: UIView {
         self.searchBar.delegate = self
         self.searchBar.showsCancelButton = type == .home ? false : true
         self.searchBar.isUserInteractionEnabled = type == .home ? false : true
-        searchBar.searchBarStyle = .minimal
+        
         self.addSubview(self.searchBar)
-        self.backgroundColor = .white
+        self.backgroundColor = .clear
+        self.searchBar.backgroundColor = .white
+        searchBar.searchBarStyle = .minimal
+        
         if type == .search {
             self.searchBar.becomeFirstResponder()
         }
