@@ -121,7 +121,7 @@ class HomeViewController: BaseViewController, HomeDisplayLogic {
     func display(model: Home.Search.Response) {
         var urls: [String] = []
         for url in model.results {
-            urls.append(url.urls.raw)
+            urls.append(url.urls.regular)
         }
 
         if itemList == nil {
@@ -164,6 +164,12 @@ class HomeViewController: BaseViewController, HomeDisplayLogic {
 
 extension HomeViewController {
     private func setComponents() {
+        
+        //todo: like unsplash app, put animation on searchBar and tableViewHeader
+//        let view: UIView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.width, height: 300.0))
+//        view.backgroundColor = .red
+//        self.tableView.tableHeaderView = view
+        
         self.tableView.rx.setDelegate(self).disposed(by: disposeBag)
         self.view.addSubview(self.searchBar)
         self.searchBar.searchBar.resignFirstResponder()
@@ -231,7 +237,7 @@ extension HomeViewController {
                                                               cellType: ImageTableViewCell.self)
                 let item: PhotoModel = list.lists[indexPath.row]
                 cell.height = CGFloat((item.height * Int(UIScreen.width))/item.width)
-                cell.setup(urls: item.urls, width: item.width, height: item.height)
+                cell.setup(name: item.user.name, urls: item.urls)
                 return cell
         }
         .disposed(by: disposeBag)
@@ -270,12 +276,9 @@ extension HomeViewController: UITableViewDelegate {
             return
         }
         let loadIndex = list.lists.count - 5
-        if indexPath.row > loadIndex && self.isConnecting == false {
-            // handle your logic here to get more items, add it to dataSource and reload tableview
+        if indexPath.row > loadIndex && self.isConnecting == false {            
             self.requestData(pageNumber: self.itemList!.pageCount + 1)
-            
         }
-        
     }
 }
 

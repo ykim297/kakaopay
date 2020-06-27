@@ -127,7 +127,7 @@ class SearchViewController: BaseViewController, SearchDisplayLogic {
     func display(model: Search.Search.Response) {
         var urls: [String] = []
         for url in model.results {
-            urls.append(url.urls.raw)
+            urls.append(url.urls.regular)
         }
 
         if itemList == nil {
@@ -253,7 +253,7 @@ extension SearchViewController {
                                                               cellType: ImageTableViewCell.self)
                 let item: PhotoModel = list.lists[indexPath.row]
                 cell.height = CGFloat((item.height * Int(UIScreen.width))/item.width)
-                cell.setup(urls: item.urls, width: item.width, height: item.height)
+                cell.setup(name: item.user.name, urls: item.urls)
                 return cell
         }
         .disposed(by: disposeBag)
@@ -293,9 +293,7 @@ extension SearchViewController: UITableViewDelegate {
         }
         let loadIndex = list.lists.count - 5
         if indexPath.row > loadIndex && self.isConnecting == false && list.totalPage > list.pageCount {
-            // handle your logic here to get more items, add it to dataSource and reload tableview
             self.requestData(word: self.searchBar.searchBar.text ?? "", pageNumber: list.pageCount + 1)
-            
         }
         
     }

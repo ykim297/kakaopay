@@ -1,8 +1,8 @@
 //
 //  Log.swift
-//  Backpac
+//  KakaoPay
 //
-//  Created by Yong Seok Kim on 2020/05/28.
+//  Created by Yong Seok Kim on 2020/06/26.
 //  Copyright © 2020 Yong Seok Kim. All rights reserved.
 //
 
@@ -10,7 +10,7 @@ import Logging
 import LoggingOSLog
 
 public final class Log {
-    public static var `default`: Logger = Logger(label: "com.Backpac.app", factory: LoggingOSLog.init)
+    public static var `default`: Logger = Logger(label: "com.Kakaopay.app", factory: LoggingOSLog.init)
 
     public class func setup(subsystem: String, level: Logger.Level = .debug) {
         `default` = Logger(label: subsystem, factory: LoggingOSLog.init)
